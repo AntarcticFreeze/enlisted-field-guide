@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #172019;
+    color: #F2F0E6;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #6B8564;
+    color: #F2F0E6;
+    padding: 24px;
+    text-align: center;
+    border-bottom: 5px solid #8B2E32;
+}
+
+header h1 {
+    margin: 0 0 16px;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+nav a {
+    display: block;
+    padding: 10px 14px;
+    color: #F2F0E6;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    background-color: #8B2E32;
+    text-decoration: underline;
+}
+
+nav a[aria-current="page"] {
+    background-color: #8B2E32;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: #252825;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url("images/enlisted-hero.png");
+    background-size: cover;
+    background-position: center;
+    border-left: 5px solid #8B2E32;
+    padding: 100px 24px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.hero h2 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.hero p {
+    margin-bottom: 0;
+    font-size: 1.1rem;
+}
+
+.introduction {
+    margin-bottom: 32px;
+}
+
+.introduction h2 {
+    border-bottom: 2px solid #8B2E32;
+    padding-bottom: 8px;
+}
+
+.guide-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.guide-card {
+    flex: 0 1 calc((100% - 40px) / 3);
+}
+
+.guide-card {
+    background-color: #252825;
+    border-top: 4px solid #8B2E32;
+    padding: 24px;
+}
+
+.guide-card h3 {
+    margin-top: 0;
+}
+
+.guide-card a {
+    display: inline-block;
+    background-color: #8B2E32;
+    color: #F2F0E6;
+    padding: 10px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.guide-card a:hover,
+.guide-card a:focus-visible {
+    text-decoration: underline;
+    background-color: #702529;
+}
+
+footer {
+    background-color: #6B8564;
+    color: #F2F0E6;
+    border-top: 4px solid #8B2E32;
+    margin-top: 40px;
+    padding: 24px;
+    text-align: center;
+}
+
+footer p {
+    margin: 8px 0;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+    .guide-grid {
+        flex-direction: column;
+    }
+
+    .guide-grid > .guide-card {
+        flex: auto;
+        width: 100%;
+    }
+}
